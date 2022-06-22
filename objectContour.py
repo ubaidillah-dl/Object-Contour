@@ -26,7 +26,8 @@ while True:
     cv2.imshow("Biner",biner)
     cv2.imshow("Result Contour",result_contour)
     
-    if cv2.waitKey(0):
+    if cv2.waitKey(1)==ord('p'):
         break
 
+camera.release()
 cv2.destroyAllWindows()
